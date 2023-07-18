@@ -168,7 +168,6 @@ void computadadostimes(time * timescampeonato,int notimes,jogo * dadosjogos,int 
 }
 
 // Imprime classificação
-
 void imprimeclassificacao(time * timescampeonato,int notimes){
  // Adicione seu código
  ordenaPontos(timescampeonato, notimes);
@@ -210,9 +209,6 @@ int main() {
     lenometime(visitante);
     scanf("%d,%d",&golslocal,&golsvisitante);
     getchar(); // consome o enter do scanf
-    // printf("local %s visitante %s ", local, visitante);
-    // printf("golslocal %d, golsvisitante %d\n", golslocal,golsvisitante);
-    if (golslocal < 0)
       break; // termina a entrada de dados
 
     if(strcmp(local,visitante) == 0)
